@@ -33,8 +33,8 @@ def get_filters():
     # CITY
     while True:
         try:
-            city_input = input("Would you like to see data for Chicago, New York City, or Washington? \n").lower().strip()
-            if city_input != 'chicago' and city_input!='new york city' and city_input != 'washington':
+            city_input = input("Would you like to see data for Chicago, New York City, Los Angeles or Washington? \n").lower().strip()
+            if city_input != 'chicago' and city_input!='new york city' and city_input != 'washington' and city_input != 'los angeles':
                 print('That\'s not a valid city name! Please try it again')                     
             else:        
                 city = city_input
@@ -155,7 +155,7 @@ def time_stats(df, month, day):
     if month == 'all':
         
         # create a dictionary with month names for displaying full name instead of numbers
-        month_names = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June'}
+        month_names = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June', '7' : 'July'}
     
         # extract months from the Start Time column to create a month column
         df['month'] = df['Start Time'].dt.month
