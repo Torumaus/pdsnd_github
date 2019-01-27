@@ -155,7 +155,7 @@ def time_stats(df, month, day):
     if month == 'all':
         
         # create a dictionary with month names for displaying full name instead of numbers
-        month_names = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June'}
+        month_names = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June', '7' : 'July'}
     
         # extract months from the Start Time column to create a month column
         df['month'] = df['Start Time'].dt.month
