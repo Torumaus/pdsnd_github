@@ -33,8 +33,8 @@ def get_filters():
     # CITY
     while True:
         try:
-            city_input = input("Would you like to see data for Chicago, New York City, or Washington? \n").lower().strip()
-            if city_input != 'chicago' and city_input!='new york city' and city_input != 'washington':
+            city_input = input("Would you like to see data for Chicago, New York City, Los Angeles or Washington? \n").lower().strip()
+            if city_input != 'chicago' and city_input!='new york city' and city_input != 'washington' and city_input != 'los angeles':
                 print('That\'s not a valid city name! Please try it again')                     
             else:        
                 city = city_input
